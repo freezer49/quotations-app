@@ -6,24 +6,34 @@
     <title>quotes</title>
   </head>
   <body>
-     <!-- structure HTML -->
+    <!-- structure HTML -->
 
     <header>
       <h1>Mes citations</h1>
       <h2>Gestionnaire de citations en ligne</h2>
-      <h3>0 citations</h3>
-      <hr>
+      <h3 id="quoteCount">0 citations</h3>
+      <hr />
 
       <!-- //ajout d'un formulaire -->
 
       <form id="quoteForm">
         <div>
           <label for="quoteInput">Citation :</label>
-          <input type="text" id="quoteInput" placeholder="Entrez la citation" required>
+          <input
+            type="text"
+            id="quoteInput"
+            placeholder="Entrez la citation"
+            required
+          />
         </div>
         <div>
           <label for="authorInput">Auteur :</label>
-          <input type="text" id="authorInput" placeholder="Entrez le nom de l'auteur" required>
+          <input
+            type="text"
+            id="authorInput"
+            placeholder="Entrez le nom de l'auteur"
+            required
+          />
         </div>
         <button type="submit">Ajouter</button>
       </form>

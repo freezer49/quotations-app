@@ -1,3 +1,7 @@
+//Creer un compteur de soumissions du formulaire
+
+let quoteCount = 0;
+
 //Ajout d'un gestionnaire d'evenement avec addEventListener
 
 const quoteForm = document.getElementById("quoteForm");
@@ -19,6 +23,7 @@ quoteForm.addEventListener("submit", function (event) {
 //Affichage des citations saisies directement sur la page.
 
 function addQuote(quote, author) {
+  quoteCount += 1;
   const quoteText = document.createElement("p");
   quoteText.classList.add("text");
   quoteText.textContent = quote;
@@ -33,4 +38,7 @@ function addQuote(quote, author) {
 
   const quoteList = document.getElementById("quote-list");
   quoteList.appendChild(quoteDiv);
+
+  const innerText = (document.getElementById("quoteCount").innerText =
+    quoteCount + " citations");
 }
