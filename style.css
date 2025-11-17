@@ -1,0 +1,54 @@
+/* Création du style de l'interface du gestionnaire de citations en ligne */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+/* Bouton rétro simple */
+button[type="submit"] {
+  background-color: #f5e6d3;
+  color: black;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 3px solid black;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px black;
+  cursor: pointer;
+} /* Inputs */
+#quoteForm label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#quoteForm input {
+  width: 100%;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+/* Fond vert pâle */
+body {
+  background-color: #e8f5e9;
+}
+body {
+  background-color: #e8f5e9;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Citations blanches */
+.quote {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+}
